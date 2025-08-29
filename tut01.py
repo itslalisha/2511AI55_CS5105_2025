@@ -149,11 +149,10 @@ class StudentDataAnalyser:
 def main():
     st.set_page_config(
         page_title="Student Data Analyser",
-        page_icon="🎓",
         layout="wide"
     )
     
-    st.title("🎓 Student Data Analyser")
+    st.title(" Student Data Analyser")
     st.markdown("Upload student data and automatically save groups to local folders")
     
     # Initialize grouping system
@@ -161,7 +160,7 @@ def main():
         st.session_state.grouping = StudentDataAnalyser()
     
     # File upload section
-    st.subheader("📁 Upload Student Data")
+    st.subheader("Upload Student Data")
     uploaded_file = st.file_uploader(
         "Choose Excel or CSV file",
         type=['xlsx', 'xls', 'csv']
@@ -169,42 +168,42 @@ def main():
     
     if uploaded_file:
         if st.session_state.grouping.load_data(uploaded_file):
-            st.success("✅ Data loaded successfully!")
+            st.success(" Data loaded successfully!")
             
             # Show data summary
             col1, col2 = st.columns(2)
             
             with col1:
-                st.subheader("📊 Summary")
+                st.subheader("Summary")
                 st.metric("Total Students", len(st.session_state.grouping.students_df))
                 st.metric("Total Branches", len(st.session_state.grouping.branches))
             
             with col2:
-                st.subheader("🏫 Branches")
+                st.subheader(" Branches")
                 for branch in sorted(st.session_state.grouping.branches.keys()):
                     count = len(st.session_state.grouping.branches[branch])
                     st.write(f"**{branch}**: {count} students")
             
             # Group settings
-            st.subheader("⚙️ Group Settings")
+            st.subheader(" Group Settings")
             num_groups = st.number_input("Number of Groups", min_value=2, max_value=20, value=5)
             
             # Processing buttons
             col1, col2, col3 = st.columns(3)
             
             with col1:
-                if st.button("💾 Save Branch Files", type="primary"):
+                if st.button(" Save Branch Files", type="primary"):
                     with st.spinner("Saving branch files..."):
                         saved_files = st.session_state.grouping.save_branch_files()
-                        st.success(f"✅ Saved {len(saved_files)} branch files to `branch_files/` folder")
+                        st.success(f" Saved {len(saved_files)} branch files to `branch_files/` folder")
                         for file in saved_files:
-                            st.write(f"📄 {file}")
+                            st.write(f" {file}")
             
             with col2:
-                if st.button("🔄 Create Branch-wise Groups", type="primary"):
+                if st.button("Create Branch-wise Groups", type="primary"):
                     with st.spinner("Creating branch-wise groups..."):
                         saved_files, groups = st.session_state.grouping.create_and_save_branchwise_groups(num_groups)
-                        st.success(f"✅ Saved {len(saved_files)} files to `branchwise_groups/` folder")
+                        st.success(f" Saved {len(saved_files)} files to `branchwise_groups/` folder")
                         
                         # Show group summary
                         st.write("**Group Summary:**")
@@ -215,10 +214,10 @@ def main():
                                 st.write(f"G{i+1}: {len(group)} students - {dict(branch_dist)}")
             
             with col3:
-                if st.button("📊 Create Uniform Groups", type="primary"):
+                if st.button(" Create Uniform Groups", type="primary"):
                     with st.spinner("Creating uniform groups..."):
                         saved_files, groups = st.session_state.grouping.create_and_save_uniform_groups(num_groups)
-                        st.success(f"✅ Saved {len(saved_files)} files to `uniform_groups/` folder")
+                        st.success(f" Saved {len(saved_files)} files to `uniform_groups/` folder")
                         
                         # Show group summary
                         st.write("**Group Summary:**")
@@ -229,7 +228,7 @@ def main():
                                 st.write(f"G{i+1}: {len(group)} students - {dict(branch_dist)}")
     
     # Information section
-    st.subheader("📂 Output Folder Structure")
+    st.subheader(" Output Folder Structure")
     st.code("""
 project_folder/
 ├── student_grouping_app.py
@@ -251,7 +250,7 @@ project_folder/
     """)
 
     # Instructions
-    with st.expander("📋 How to Use"):
+    with st.expander(" How to Use"):
         st.markdown("""
         ### Steps:
         1. **Upload** your Excel/CSV file with student data
