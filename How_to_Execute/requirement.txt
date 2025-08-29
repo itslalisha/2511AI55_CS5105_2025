@@ -1,13 +1,5 @@
 streamlit
-
-# Data manipulation and analysis
 pandas
-
-# Excel file handling
 openpyxl
-
-# Additional Excel support (backup)
 xlrd
-
-# Optional: For enhanced Excel compatibility
 xlsxwriter
