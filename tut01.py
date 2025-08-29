@@ -3,7 +3,7 @@ import pandas as pd
 import os
 import math
 
-class StudentGrouping:
+class StudentDataAnalyser:
     def __init__(self):
         self.students_df = None
         self.branches = {}
@@ -148,17 +148,17 @@ class StudentGrouping:
 
 def main():
     st.set_page_config(
-        page_title="Student Grouping",
+        page_title="Student Data Analyser",
         page_icon="🎓",
         layout="wide"
     )
     
-    st.title("🎓 Student Grouping System")
+    st.title("🎓 Student Data Analyser")
     st.markdown("Upload student data and automatically save groups to local folders")
     
     # Initialize grouping system
     if 'grouping' not in st.session_state:
-        st.session_state.grouping = StudentGrouping()
+        st.session_state.grouping = StudentDataAnalyser()
     
     # File upload section
     st.subheader("📁 Upload Student Data")
