@@ -1,0 +1,22 @@
+2025-10-30 19:48:15,796 - INFO - Generating faculty preference stats...
+2025-10-30 19:48:15,814 - INFO - Successfully generated preference stats.
+2025-10-30 19:48:15,814 - INFO - Starting student allocation...
+2025-10-30 19:48:15,824 - ERROR - Missing expected column in allocation: 'Roll No'
+2025-10-30 19:53:10,719 - INFO - Generating faculty preference stats...
+2025-10-30 19:53:10,719 - ERROR - Error in generate_preference_stats: index cannot be a set
+2025-10-30 19:53:10,721 - INFO - Starting student allocation...
+2025-10-30 19:53:10,810 - INFO - Starting allocation cycle 1. 90 students remaining.
+2025-10-30 19:53:10,810 - INFO - Starting allocation cycle 2. 72 students remaining.
+2025-10-30 19:53:10,810 - INFO - Starting allocation cycle 3. 54 students remaining.
+2025-10-30 19:53:10,811 - INFO - Starting allocation cycle 4. 36 students remaining.
+2025-10-30 19:53:10,811 - INFO - Starting allocation cycle 5. 18 students remaining.
+2025-10-30 19:53:10,811 - INFO - Allocation complete.
+2025-10-30 19:55:35,800 - INFO - Generating faculty preference stats...
+2025-10-30 19:55:35,855 - INFO - Successfully generated preference stats.
+2025-10-30 19:55:35,858 - INFO - Starting student allocation...
+2025-10-30 19:55:35,916 - INFO - Starting allocation cycle 1. 90 students remaining.
+2025-10-30 19:55:35,916 - INFO - Starting allocation cycle 2. 72 students remaining.
+2025-10-30 19:55:35,916 - INFO - Starting allocation cycle 3. 54 students remaining.
+2025-10-30 19:55:35,917 - INFO - Starting allocation cycle 4. 36 students remaining.
+2025-10-30 19:55:35,917 - INFO - Starting allocation cycle 5. 18 students remaining.
+2025-10-30 19:55:35,917 - INFO - Allocation complete.
