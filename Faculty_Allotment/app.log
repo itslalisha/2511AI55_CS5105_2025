@@ -88,3 +88,12 @@
 2025-10-30 17:41:26,621 - INFO - Starting allocation cycle 4. 36 students remaining.
 2025-10-30 17:41:26,622 - INFO - Starting allocation cycle 5. 18 students remaining.
 2025-10-30 17:41:26,623 - INFO - Allocation complete.
+2025-10-31 07:24:53,397 - INFO - Generating faculty preference stats...
+2025-10-31 07:24:53,480 - INFO - Successfully generated preference stats.
+2025-10-31 07:24:53,482 - INFO - Starting student allocation...
+2025-10-31 07:24:53,612 - INFO - Starting allocation cycle 1. 90 students remaining.
+2025-10-31 07:24:53,613 - INFO - Starting allocation cycle 2. 72 students remaining.
+2025-10-31 07:24:53,615 - INFO - Starting allocation cycle 3. 54 students remaining.
+2025-10-31 07:24:53,616 - INFO - Starting allocation cycle 4. 36 students remaining.
+2025-10-31 07:24:53,617 - INFO - Starting allocation cycle 5. 18 students remaining.
+2025-10-31 07:24:53,618 - INFO - Allocation complete.
