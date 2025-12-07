@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  seating-system:
+    # Builds the image using the Dockerfile in the current directory
+    build: . 
+    
+    # Sets a specific name for the container (matches your previous error log)
+    container_name: seating_app
+    
+    # Maps port 8501 on your computer to 8501 inside the container
+    ports:
+      - "8501:8501"
+    
+    # Syncs your current folder with /app inside the container
+    # This allows you to edit code without rebuilding the image!
+    volumes:
+      - .:/app
+    
+    # Restart the container automatically if it crashes (unless you stopped it)
+    restart: unless-stopped
